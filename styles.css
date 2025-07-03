@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a1301d;
+}
+
+.container {
+    width: 100%;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a1301d;
+    padding: 0;
+}
+
+.eagle-logo-left img,
+.eagle-logo-right img {
+    height: 100px;
+    width: auto;
+}
+
+.navigation-sections {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 2px;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1301d;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.nav-section:hover {
+    background-color: #8b2617;
+}
+
+.main-content {
+    background-image: url("fireworks.jpg"); /* Add your background fireworks image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.center-logo-section {
+    margin-bottom: 40px;
+}
+
+.vf-logo-img {
+    width: 150px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-photo img {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
