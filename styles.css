@@ -72,3 +72,48 @@ body {
     border: 4px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.about-us-section,
+.book-show-form {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+
+.about-us-section h1,
+.book-show-form h1 {
+    text-align: center;
+    color: #a1301d;
+}
+
+.book-show-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.book-show-form input,
+.book-show-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.book-show-form button {
+    background-color: #a1301d;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.book-show-form button:hover {
+    background-color: #8b2617;
+}
