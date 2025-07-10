@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    gap: 2px;
+    gap: 10px;
 }
 
 .nav-section {
@@ -48,7 +48,7 @@ body {
 }
 
 .main-content {
-    background-image: url("fireworks.jpg"); /* Add your background fireworks image */
+    background-image: url("fireworks.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -60,9 +60,12 @@ body {
 }
 
 .vf-logo-img {
-    width: 150px;
+    width: 250px;
     height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .team-photo img {
@@ -72,7 +75,64 @@ body {
     border: 4px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.about-us-section,
+
+.about-main-content {
+    background-image: url("fireworks.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.about-photo {
+    text-align: center;
+    max-width: 250px;
+}
+
+.about-photo img {
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.about-photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.center-logo img {
+    width: 180px;
+    border: none;
+    box-shadow: none;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.about-description p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
 .book-show-form {
     max-width: 700px;
     margin: auto;
@@ -83,7 +143,6 @@ body {
     color: #000;
 }
 
-.about-us-section h1,
 .book-show-form h1 {
     text-align: center;
     color: #a1301d;
@@ -117,3 +176,27 @@ body {
 .book-show-form button:hover {
     background-color: #8b2617;
 }
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-sections {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-section {
+        width: 100%;
+        border: none;
+        border-top: 1px solid black;
+    }
+
+    .about-photo-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
